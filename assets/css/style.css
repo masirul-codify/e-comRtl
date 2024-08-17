@@ -1,9 +1,4 @@
-/*----------------------------------------------
-    01. Preloader  
-    02. Header  
-    03. Meanmenu 
-    04. Back to top 
-----------------------------------------------*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -201,6 +196,11 @@ span {
 .theme-btn i {
   margin-left: 10px;
   color: var(--theme) !important;
+  transform: rotate(-105deg);
+  -webkit-transform: rotate(-105deg);
+  -moz-transform: rotate(-105deg);
+  -ms-transform: rotate(-105deg);
+  -o-transform: rotate(-105deg);
 }
 
 .theme-btn:hover {
@@ -265,11 +265,11 @@ span {
 }
 
 .theme-btn.style3:before {
-  background-color: var(--title);
+  background-color: var(--theme);
 }
 
 .theme-btn.style3:after {
-  background-color: var(--title);
+  background-color: var(--theme);
 }
 
 .theme-btn.style3:hover {
@@ -343,136 +343,7 @@ span {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-
-/*----------------------------------------------
-    # 01. Preloader  
-----------------------------------------------*/
-.preloader {
-  align-items: center;
-  cursor: default;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 9999999;
-}
-
-.preloader .animation-preloader {
-  z-index: 1000;
-}
-
-.preloader .animation-preloader .spinner {
-  animation: spinner 1s infinite linear;
-  border-radius: 50%;
-  border: 3px solid rgba(0, 0, 0, 0.2);
-  border-top-color: var(--theme);
-  height: 9em;
-  margin: 0 auto 3.5em auto;
-  width: 9em;
-}
-
-.preloader .animation-preloader .txt-loading {
-  font: bold 5em "Open Sans", sans-serif;
-  text-align: center;
-  user-select: none;
-}
-
-.preloader .animation-preloader .txt-loading .letters-loading {
-  color: var(--theme);
-  position: relative;
-}
-
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
-  animation-delay: 0.2s;
-}
-
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(3):before {
-  animation-delay: 0.4s;
-}
-
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(4):before {
-  animation-delay: 0.6s;
-}
-
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(5):before {
-  animation-delay: 0.8s;
-}
-
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(6):before {
-  animation-delay: 1s;
-}
-
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
-  animation-delay: 1.2s;
-}
-
-.preloader .animation-preloader .txt-loading .letters-loading:nth-child(8):before {
-  animation-delay: 1.4s;
-}
-
-.preloader .animation-preloader .txt-loading .letters-loading::before {
-  animation: letters-loading 4s infinite;
-  color: var(--header);
-  content: attr(data-text-preloader);
-  left: 0;
-  opacity: 0;
-  font-family: "Open Sans", sans-serif;
-  position: absolute;
-  top: -3px;
-  transform: rotateY(-90deg);
-}
-
-.preloader p {
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  color: var(--theme);
-}
-
-.preloader .loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-size: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.preloader .loader .row {
-  height: 100%;
-}
-
-.preloader .loader .loader-section {
-  padding: 0px;
-}
-
-.preloader .loader .loader-section .bg {
-  background-color: var(--bg);
-  height: 100%;
-  left: 0;
-  width: 100%;
-  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.preloader.loaded .animation-preloader {
-  opacity: 0;
-  transition: 0.3s ease-out;
-}
-
-.preloader.loaded .loader-section .bg {
-  width: 0;
-  transition: 0.7s;
-  -webkit-transition: 0.7s;
-  -moz-transition: 0.7s;
-  -ms-transition: 0.7s;
-  -o-transition: 0.7s;
-}
+ 
 
 
 /*----------------------------------------------
@@ -581,7 +452,7 @@ span {
 
 
 .header-1 .header-right .header-button {
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 
@@ -885,6 +756,9 @@ span {
 }
 
 
+/*----------------------------------------------
+     03. Offcanvas  
+----------------------------------------------*/
 .offcanvas__info {
   background: var(--title) none repeat scroll 0 0;
   border-left: 2px solid var(--theme);
@@ -1046,7 +920,7 @@ span {
 
 
 /*----------------------------------------------
-     03. Meanmenu  
+     04. Meanmenu  
 ----------------------------------------------*/
 .mean-container a.meanmenu-reveal {
   display: none;
@@ -1225,39 +1099,6 @@ span {
   margin-bottom: 20px;
 }
 
-/*----------------------------------------------
-      04. Back to top 
-  ----------------------------------------------*/
-.back-to-top {
-  border-radius: 12px;
-  background-color: var(--theme);
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  color: var(--white);
-  font-size: 18px;
-  position: fixed;
-  display: inline-block;
-  z-index: 99;
-  right: 30px;
-  bottom: 30px;
-  transition: all 0.4s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(20px);
-}
-
-.back-to-top:hover {
-  background-color: #EF9028;
-}
-
-.back-to-top.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0);
-}
-
-
 
 /*----------------------------------------------
     05. Mouse Cursor 
@@ -1315,7 +1156,7 @@ span {
 
 
 /*----------------------------------------------
-    05. Search Wrap 
+    06. Search Wrap 
 ----------------------------------------------*/
 .search-wrap {
   width: 100%;
@@ -1388,7 +1229,7 @@ input.main-search-input::placeholder {
 
 
 /*----------------------------------------------
-    06. Breadcumb   
+    07. Breadcumb   
 ----------------------------------------------*/
 .breadcumb-wrapper {
   padding: 205px 0 160px;
@@ -1440,7 +1281,7 @@ input.main-search-input::placeholder {
 }
 
 /*----------------------------------------------
-    07. Service   
+    08. Service   
 ----------------------------------------------*/
 
 .service-card-wrapper.style1 {
@@ -1572,7 +1413,7 @@ input.main-search-input::placeholder {
 
 
 /*----------------------------------------------
-    08. Offer   
+    09. Offer   
 ----------------------------------------------*/
 .offer-wrapper.style1 h2 {
   position: relative;
@@ -1644,6 +1485,7 @@ input.main-search-input::placeholder {
   height: 100px;
   padding: 10px;
   box-shadow: var(--box-shadow);
+  background-color: white;
   transform: translateY(50%);
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -1707,32 +1549,41 @@ input[type="radio" i] {
 }
 
 
+ 
 
-/* Popup */
-
+/*----------------------------------------------
+    10. Popup    
+----------------------------------------------*/
 
 .popup-card-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 90px;
+  grid-template-columns: 20% 20%;  
+  justify-content: flex-end;
+  gap: 80px;    
 }
 
 .popup-card.style1 {
-  text-align: start;
+  text-align: start;  
   position: relative;
-  padding: 20px 15px 25px 30px;
+  padding: 20px 35px 25px 30px;
   box-shadow: var(--box-shadow);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   transition: all 0.4s;
   border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
   z-index: 3;
+}
+.popup-card.style1 p { 
+  font-size: 15px;
+  margin-top: 16px;
+  line-height: 20px;
+  font-family: "Opem sans", sans-serif;
+  font-weight: 700; 
+}
+
+
+.popup-card.style1 p span{ 
+  color: var(--theme);
 }
 
 .popup-card.style1 .img {
@@ -1743,4 +1594,6 @@ input[type="radio" i] {
 .popup-card.style1 .img img {
   display: block;
   text-align: start;
+  width: 25px;
+  height: 25px;
 }
