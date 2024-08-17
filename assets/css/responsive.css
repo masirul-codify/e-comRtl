@@ -175,15 +175,19 @@
     font-size: 14px;
     padding: 24px 27px;
   }
+  
   .theme-btn.style2 { 
-    padding: 15px 30px; 
+    padding: 15px 60px;
+    font-size: 29px; 
     margin-top: 15px;
 }
 
 .theme-btn.style3 { 
-  padding: 15px 20px; 
+  padding: 15px 52px;
+  font-size: 29px; 
   margin-top: 5px!important;
 }
+ 
 
 .offer-card.style1 .offer-card-header h3 {
   margin-top: 60px;
@@ -282,14 +286,15 @@
 .theme-btn {
   font-size: 12px;
 }
-.theme-btn.style2 {
-  padding: 15px 90px;
-  font-size: 29px;
+.theme-btn.style2 { 
+  padding: 15px 60px;
+  font-size: 29px; 
 }
-.theme-btn.style3 {
-  padding: 15px 81px;
-  font-size: 29px;
+.theme-btn.style3 { 
+  padding: 15px 52px;
+  font-size: 29px; 
 }
+
 .offer-card.style1 .offer-card-header h3 {
   margin-top: 60px;
 }
@@ -333,11 +338,11 @@
   }
 
   .theme-btn.style2 { 
-    padding: 15px 60px;
+    padding: 15px 93px;
     font-size: 29px; 
   }
   .theme-btn.style3 { 
-    padding: 15px 52px;
+    padding: 15px 84px;
     font-size: 29px; 
   }
   
@@ -368,6 +373,15 @@
     grid-template-columns: 46% 42%;
     justify-content: flex-end;
     gap: 80px;
+}
+
+.theme-btn.style2 { 
+  padding: 15px 60px;
+  font-size: 29px; 
+}
+.theme-btn.style3 { 
+  padding: 15px 52px;
+  font-size: 29px; 
 }
 }
 
