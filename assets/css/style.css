@@ -1634,7 +1634,7 @@ input.main-search-input::placeholder {
     08. Service   
 ----------------------------------------------*/
 
-.offer-card-wrappper.style1 { 
+.offer-card-wrapper.style1 { 
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 120px;
