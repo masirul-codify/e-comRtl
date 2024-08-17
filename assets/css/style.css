@@ -21,7 +21,7 @@
   --border-2: #D4DCED;
   --bg: #EAECF3;
   --bg2: #EBEDE2;
-  --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.09);
+  --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
 }
  
 /* --------------------------------------------
@@ -668,8 +668,7 @@ span {
     }
   }
   .header-1 .header-right .sidebar__toggle {
-    color: var(--theme);
-    margin-left: 30px;
+    color: var(--theme); 
   }
   @media (max-width: 1399px) {
     .header-1 .header-right .sidebar__toggle {
@@ -1636,6 +1635,25 @@ input.main-search-input::placeholder {
 /*----------------------------------------------
     08. Offer   
 ----------------------------------------------*/
+.offer-wrapper.style1 h2{
+  position: relative;
+}
+.offer-wrapper.style1 h2::before{
+  position: absolute;
+  content: '';
+  bottom: -10px;
+  left: 50%;
+  width: 150px;
+  height: 5px;
+  background-color: var(--theme);
+  transform: translateX(-50%);
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
 .offer-wrapper.style1 .show-more-btn {
   max-width: 120px;
   margin: 60px auto;
@@ -1744,4 +1762,42 @@ input[type="radio" i] {
   border: initial;
   width: 18px;
   height: 18px;
+}
+
+
+
+/* Popup */
+
+
+.popup-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 90px;
+}
+
+.popup-card.style1{
+  text-align: start;
+  position: relative;
+  padding: 20px 15px 25px 30px;
+  box-shadow: var(--box-shadow);
+  transition: all 0.4s;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  z-index: 3;
+}
+
+.popup-card.style1 .img {
+  display: flex;
+  justify-content: end;
+}
+.popup-card.style1 .img img{
+  display: block;
+  text-align: start;
 }

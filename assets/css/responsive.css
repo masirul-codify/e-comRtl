@@ -24,6 +24,13 @@
      grid-template-columns: repeat(1, 1fr);
      gap: 70px;
    }
+
+   
+   .popup-card-wrapper {
+    display: grid;
+    grid-template-columns: 20% 18%;
+    gap: 90px;
+  }
  }
 
 
@@ -43,6 +50,14 @@
      grid-template-columns: repeat(2, 1fr);
      gap: 80px;
    }
+
+   
+
+   .popup-card-wrapper {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    gap: 90px;
+  }
  }
 
  @media (min-width: 1200px) {
@@ -61,6 +76,13 @@
      grid-template-columns: repeat(2, 1fr);
      gap: 80px;
    }
+
+   
+   .popup-card-wrapper {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap: 90px;
+  }
  }
 
  @media (min-width: 1400px) {
@@ -79,6 +101,11 @@
      gap: 90px;
    }
 
+   .popup-card-wrapper {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    gap: 90px;
+  }
  }
 
  @media (min-width: 1600px) {
@@ -97,6 +124,13 @@
      grid-template-columns: repeat(3, 1fr);
      gap: 100px;
    }
+
+   
+.popup-card-wrapper {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  gap: 90px;
+}
 
  }
 
@@ -162,4 +196,54 @@
    .theme-btn.style3 {
      font-size: 30px;
    }
+
+   
+.popup-card-wrapper{
+  display: grid; 
+  grid-template-columns: repeat(1,1fr);
+  gap: 30px;
+}
+
+.checklist ul li {
+  gap: 0px;
+  margin-top: 5px;
+}
+
+.checklist ul li .content  label {
+  font-size: 15px;
+  color: var(--text);
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+.offer-card.style1 .offer-card-header h3 {
+  font-size: 65px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 50px;
+}
+
+.offer-card.style1 .offer-card-header .logo img { 
+  z-index: 99;
+  background: white;
+}
+
+.fancy-box.style1 .content .title {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.fancy-box.style1 .content .text {
+  font-size: 16px;
+}
+
+.theme-btn.style2 { 
+  padding: 15px 30px; 
+}
+.theme-btn.style3 { 
+  padding: 15px 24px; 
+}
+.service-card.style1 {
+  padding: 30px 8px 21px 8px; 
+}
+
  }
