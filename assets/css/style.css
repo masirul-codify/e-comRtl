@@ -21,7 +21,7 @@
   --border-2: #D4DCED;
   --bg: #EAECF3;
   --bg2: #EBEDE2;
-  --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+  --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.09);
 }
  
 /* --------------------------------------------
@@ -226,12 +226,65 @@ span {
   width: 100%;
 }
 
+.theme-btn.style2{
+  border: none;
+  background: var(--theme);
+  color: var(--title);
+  padding: 15px 75px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Open sans", sans-serif;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 
+.theme-btn.style2:before { 
+  background-color: var(--title);
+}
+.theme-btn.style2:after { 
+  background-color: var(--title);
+}
+
+.theme-btn.style2:hover { 
+  color: var(--white)!important;
+}
+
+.theme-btn.style3{
+  border: none;
+  background: var(--title);
+  color: var(--theme);
+  padding: 15px 65px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Open sans", sans-serif;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.theme-btn.style3:before { 
+  background-color: var(--title);
+}
+.theme-btn.style3:after { 
+  background-color: var(--title);
+}
+
+.theme-btn.style3:hover { 
+  color: var(--white)!important;
+}
 /*----------------------------------------------
     # 01. Common Style Here  
 ----------------------------------------------*/
 .mb-5 {
   margin-bottom: 5px;
+}
+.mb-75  {
+  margin-bottom: 75px;
 }
 .mt-2{
   margin-top: 1rem!important;
@@ -1576,7 +1629,88 @@ input.main-search-input::placeholder {
 }
 
 
-.offer-card-wrapper.style1 { 
-  grid-template-columns: repeat(1,1fr);
-  gap: 60px;
+
+/*----------------------------------------------
+    08. Service   
+----------------------------------------------*/
+
+.offer-card-wrappper.style1 { 
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 120px;
+}
+
+.offer-card.style1{
+  position: relative;
+  padding: 40px 15px 25px 30px;
+  box-shadow: var(--box-shadow);
+  transition: all 0.4s;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  z-index: 3;
+}
+
+
+.offer-card.style1 .offer-card-header .logo img{
+  position: absolute;
+  top: -100px;
+  right: 40px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+  transform: translateY(50%);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px; 
+}
+
+.offer-card.style1 .offer-card-header .badge{
+  position: absolute;
+  top: -50px;
+  left: 40px; 
+  padding: 10px 25px;
+  background-color: var(--theme);
+  box-shadow: var(--box-shadow);
+  transform: translateY(50%);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Open Sans", sans-serif;
+  z-index: -1;
+}
+
+.offer-card.style1 .offer-card-header h3{
+  font-size: 65px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.offer-card.style1 .offer-card-header h3 span{
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Open Sans", sans-serif;
+}
+
+.offer-card.style1 .theme-btn2{
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+}
+.offer-card.style1 .theme-btn3{
+  display: block;
+  text-align: center;
 }
