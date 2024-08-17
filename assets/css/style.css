@@ -1460,7 +1460,7 @@ input.main-search-input::placeholder {
 
 .service-card-wrapper.style1{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(1,1fr);
   gap: 60px;
 }
 
@@ -1470,12 +1470,27 @@ input.main-search-input::placeholder {
 .service-card.style1{
   padding: 40px 15px 25px 20px;
   box-shadow: var(--box-shadow);
+  transition: all 0.4s;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
+
+.service-card.style1:hover{
+  transform: translateY(-2%);
+  -webkit-transform: translateY(-2%);
+  -moz-transform: translateY(-2%);
+  -ms-transform: translateY(-2%);
+  -o-transform: translateY(-2%);
+}
+
+
 .fancy-box.style1{
   display: flex;
   align-items: center; 
@@ -1558,4 +1573,10 @@ input.main-search-input::placeholder {
 
 .checklist .single li input{
   margin-left: 10px;
+}
+
+
+.offer-card-wrapper.style1 { 
+  grid-template-columns: repeat(1,1fr);
+  gap: 60px;
 }
