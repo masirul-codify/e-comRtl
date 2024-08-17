@@ -141,7 +141,24 @@
             mousecursor();
         });
 
+        /*-----------------------------------
+            06. Radio Btn    
+        -----------------------------------*/   
+        $('input[type="radio"]').on('click', function() {
+            var $radio = $(this);
 
+            // Check if the radio is already checked
+            if ($radio.data('waschecked') === true) {
+                // Deselect it
+                $radio.prop('checked', false);
+                $radio.data('waschecked', false);
+            } else {
+                // Mark this as the checked one
+                $radio.prop('checked', true);
+                $('input[type="radio"]').data('waschecked', false);
+                $radio.data('waschecked', true);
+            }
+        });
 
     }); // End Document Ready Function
 

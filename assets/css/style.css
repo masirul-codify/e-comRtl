@@ -1514,7 +1514,7 @@ input.main-search-input::placeholder {
 .service-card-wrapper.style1{
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  gap: 60px;
+  gap: 30px;
 }
 
 .service-card.style1 .fancy-box.style1{
@@ -1567,9 +1567,12 @@ input.main-search-input::placeholder {
   gap: 20px;
   margin-top: 5px;
 }
+.checklist ul li i{
+  font-size: 20px; 
+}
 
-.checklist ul li .content h6{
-  font-size: 22px; 
+.checklist ul li .content  label{
+  font-size: 20px; 
   color: var(--text);
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
@@ -1621,7 +1624,7 @@ input.main-search-input::placeholder {
 }
 
 .checklist .single li{ 
-  width: 100px;
+  width: 130px;
 }
 
 .checklist .single li input{
@@ -1631,11 +1634,11 @@ input.main-search-input::placeholder {
 
 
 /*----------------------------------------------
-    08. Service   
+    08. Offer   
 ----------------------------------------------*/
 .offer-wrapper.style1 .show-more-btn {
   max-width: 120px;
-  margin: 30px auto;
+  margin: 60px auto;
   font-size: 20px;
   font-weight: 600;
   font-family: "Open sans", sans-serif;
@@ -1656,6 +1659,7 @@ input.main-search-input::placeholder {
 }
 
 .offer-card.style1{
+  text-align: center;
   position: relative;
   padding: 40px 15px 25px 30px;
   box-shadow: var(--box-shadow);
@@ -1728,4 +1732,16 @@ input.main-search-input::placeholder {
 .offer-card.style1 .theme-btn3{
   display: block;
   text-align: center;
+}
+
+input[type="radio" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 8px 0px 5px;
+  padding: initial;
+  border: initial;
+  width: 18px;
+  height: 18px;
 }
