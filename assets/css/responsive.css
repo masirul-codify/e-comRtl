@@ -89,6 +89,8 @@
 
 }
 
+
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1300px;
@@ -101,7 +103,7 @@
   }
 
   .offer-card-wrapper.style1 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 90px;
   }
  
@@ -126,6 +128,8 @@
  
 
 }
+
+
 
 @media (min-width: 1800px) {
   .container {
@@ -171,7 +175,23 @@
     font-size: 14px;
     padding: 24px 27px;
   }
+  .theme-btn.style2 { 
+    padding: 15px 30px; 
+    margin-top: 15px;
 }
+
+.theme-btn.style3 { 
+  padding: 15px 20px; 
+  margin-top: 5px!important;
+}
+
+.offer-card.style1 .offer-card-header h3 {
+  margin-top: 60px;
+}
+}
+
+
+
 
 @media (max-width: 1500px) {
   .header-main .main-menu ul li { 
@@ -190,7 +210,16 @@
   justify-content: flex-end;
   gap: 80px;
 }
+
+.checklist ul li .content label {
+  font-size: 18px; 
 }
+}
+
+
+
+
+
 
 @media (max-width: 1399px) {
 
@@ -253,13 +282,13 @@
 .theme-btn {
   font-size: 12px;
 }
-.theme-btn.style2 { 
-  padding: 15px 60px;
-  font-size: 29px; 
+.theme-btn.style2 {
+  padding: 15px 90px;
+  font-size: 29px;
 }
-.theme-btn.style3 { 
-  padding: 15px 52px;
-  font-size: 29px; 
+.theme-btn.style3 {
+  padding: 15px 81px;
+  font-size: 29px;
 }
 .offer-card.style1 .offer-card-header h3 {
   margin-top: 60px;
@@ -303,6 +332,15 @@
     padding: 10px;
   }
 
+  .theme-btn.style2 { 
+    padding: 15px 60px;
+    font-size: 29px; 
+  }
+  .theme-btn.style3 { 
+    padding: 15px 52px;
+    font-size: 29px; 
+  }
+  
   
 .header__hamburger{
   display: block;
